@@ -1,6 +1,6 @@
-# CMINNs: Compartment Model Informed Neural Networks -- Unlocking Drug Dynamics
+# CMINNs: Compartment Model Informed Neural Networks - Unlocking Drug Dynamics
 
-This repository contains the code and resources for the paper: [CMINNs: Compartment Model Informed Neural Networks -- Unlocking Drug Dynamics](https://arxiv.org/abs/2409.12998). Our work introduces an innovative approach to pharmacokinetics (PK) and pharmacodynamics (PD) modeling, which enhances traditional multi-compartment models using fractional calculus and time-varying parameters.
+This repository contains the code and resources for the paper: [CMINNs: Compartment Model Informed Neural Networks - Unlocking Drug Dynamics](https://arxiv.org/abs/2409.12998). Our work introduces an innovative approach to pharmacokinetics (PK) and pharmacodynamics (PD) modeling, which enhances traditional multi-compartment models using fractional calculus and time-varying parameters.
 
 ## Overview
 
