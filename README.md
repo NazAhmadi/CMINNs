@@ -18,7 +18,7 @@ This methodology is powered by **Physics-Informed Neural Networks (PINNs)** and 
 - **PINNs and fPINNs**: We employ both integer-order and fractional-order PINNs for solving ODEs in pharmacokinetics and pharmacodynamics.
 - **Fractional Calculus**: Incorporation of fractional derivatives allows us to model anomalous diffusion, capturing complex drug dynamics such as drug trapping in tissues.
 - **Explainable Drug Dynamics**: Our approach simplifies the system of equations while providing clear insights into drug absorption rates, cancer cell death mechanisms, and therapeutic resistance.
-- **Improved Efficiency**: The proposed models offer a more computationally efficient framework with only two fractional ODEs, without sacrificing accuracy in representing drug behavior.
+- **Improved Efficiency**: The proposed models offer a more computationally efficient framework with only two ODEs, without sacrificing accuracy in representing drug behavior.
 
 ## Installation
 
@@ -38,10 +38,11 @@ pip install -r requirements.txt
 
 If you use this code or our methodology in your research, please cite the paper:
 
-
+```
 @article{ahmadi2024cminns,
   title={CMINNs: Compartment Model Informed Neural Networks - Unlocking Drug Dynamics},
   author={Nazanin Ahmadi Daryakenari and Shupeng Wang and George Karniadakis},
   journal={arXiv preprint arXiv:2409.12998},
   year={2024}
 }
+```
