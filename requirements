@@ -1,0 +1,8 @@
+jax==0.4.14
+jaxlib==0.4.14
+numpy==1.24.4
+matplotlib==3.8.0
+optax==0.1.5
+pandas==2.1.1
+jaxopt==0.7.2
+scipy==1.11.2
