@@ -33,11 +33,11 @@ cd <repository_directory>
 
 # Install the required Python libraries
 pip install -r requirements.txt
+```
 
 
 If you use this code or our methodology in your research, please cite the paper:
 
-css
 
 @article{ahmadi2024cminns,
   title={CMINNs: Compartment Model Informed Neural Networks - Unlocking Drug Dynamics},
