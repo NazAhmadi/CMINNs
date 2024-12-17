@@ -309,7 +309,7 @@ k22=[]
 all_outputs = []
 all_time_points = []
 
-#############################################
+#################### Training #########################
 for i in range(1, len(time_points)):
     total_desired_points = 100
     print(f"Interval {i}: {time_points[i-1]} to {time_points[i]}")
@@ -359,7 +359,7 @@ for i in range(1, len(time_points)):
     t_dense = np.linspace(0, 19, 1901)[:, None]
     pred = fwd(params,t_dense)
 
-# saving
+######### saving ################ 
 k22_array = jnp.array(k22)
 
 weights = [4, 0.5, 3.5, 0.5, 3.5, 4, 3]
@@ -389,6 +389,8 @@ df.to_csv(csv_filename, index=False)
 
 print(f"Values have been saved to {csv_filename}")
 
+
+########## plotting the results ######### 
 # Data provided
 k22_values = [
     k22_array[0],
@@ -427,11 +429,11 @@ plt.grid(True)
 plt.savefig('./k2.png', dpi=300)
 plt.show()
 
+
+################ Saving ################ 
 # Convert list of outputs to a JAX array (or NumPy if you prefer)
 all_outputs_array = jnp.vstack(all_outputs)
 all_time_points_array = jnp.array(all_time_points)
-
-import pandas as pd
 
 ft =pred[:,3]
 k = jnn.softplus(ft)
@@ -442,21 +444,12 @@ df_f.to_csv("./output.csv", index=False)
 
 df_f = pd.DataFrame({"t": np.ravel(all_time_points_array), "k1": np.ravel(jnn.softplus(all_outputs_array[:, [3]])) })
 df_f.to_csv("./k_pharma.csv", index=False)
-
-#@title jax implementation
-import numpy as np
-from scipy.integrate import odeint
-import matplotlib.pyplot as plt
-from jax.experimental.ode import odeint as jax_odeint
+###############################
 
 
-
-
+# Plotting the results _ Validation
 V1 = 810
-
-
 psi = 20
-k2 = k2
 lambda_0_exp1 =0.273
 lambda_1_exp1 = 0.814
 
@@ -470,7 +463,7 @@ def k2_func(t):
                                                operand=None),
                         operand=None)
 
-import pandas as pd
+
 data = pd.read_csv("./output.csv")
 
 # Defining the model
