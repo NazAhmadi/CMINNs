@@ -52,7 +52,7 @@ To set up and run the code in this repository, the following Python libraries ar
 
 ```bash
 pip install jax jaxlib numpy matplotlib optax pandas scipy
-
+```
 
 
 If you use this code or our methodology in your research, please cite the paper:
@@ -67,5 +67,5 @@ If you use this code or our methodology in your research, please cite the paper:
   year={2025},
   publisher={Elsevier}
 }
-
+```
 ```
