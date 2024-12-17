@@ -21,6 +21,39 @@ This methodology is powered by **Physics-Informed Neural Networks (PINNs)** and 
 - **Explainable Drug Dynamics**: Our approach simplifies the system of equations while providing clear insights into drug absorption rates, cancer cell death mechanisms, and therapeutic resistance.
 - **Improved Efficiency**: The proposed models offer a more computationally efficient framework with only two ODEs, without sacrificing accuracy in representing drug behavior.
 
+## Installation Requirements
+
+To set up and run the code in this repository, the following Python libraries are required:
+
+### Required Libraries
+- **jax** - Accelerated numerical computing with GPU/TPU support  
+- **jax.numpy** - JAX's NumPy-compatible numerical computation  
+- **numpy** (`np`) - Numerical computing with arrays  
+- **matplotlib** - Plotting library for visualizing data  
+- **matplotlib.cm** - Colormap utilities for Matplotlib  
+- **matplotlib.ticker** - Locator and formatter for axis ticks  
+- **optax** - Gradient processing and optimization library for JAX  
+- **sys** - Python system utilities (built-in)  
+- **jax.nn** - Neural network utilities in JAX  
+- **pandas** - Data analysis and manipulation  
+- **random** - Random number generation (built-in)  
+- **scipy** - Scientific computing utilities (integration, optimization, and interpolation)  
+- **scipy.integrate.odeint** - Solves ordinary differential equations  
+- **scipy.optimize.curve_fit** - Curve fitting tools  
+- **scipy.interpolate.interp1d** - One-dimensional interpolation  
+- **jax.experimental.ode.odeint** - ODE solver in JAX  
+
+---
+
+### Installation Instructions
+
+1. Ensure you have **Python 3.8** or higher installed.  
+2. Install the required libraries using `pip`. Run the following command in your terminal:
+
+```bash
+pip install jax jaxlib numpy matplotlib optax pandas scipy
+
+
 
 If you use this code or our methodology in your research, please cite the paper:
 
