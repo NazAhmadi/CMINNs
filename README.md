@@ -21,29 +21,18 @@ This methodology is powered by **Physics-Informed Neural Networks (PINNs)** and 
 - **Explainable Drug Dynamics**: Our approach simplifies the system of equations while providing clear insights into drug absorption rates, cancer cell death mechanisms, and therapeutic resistance.
 - **Improved Efficiency**: The proposed models offer a more computationally efficient framework with only two ODEs, without sacrificing accuracy in representing drug behavior.
 
-## Installation
-
-To install the dependencies required to run the code, you can use the following commands:
-
-```bash
-# Clone the repository
-git clone <repository_url>
-
-# Navigate to the repository directory
-cd <repository_directory>
-
-# Install the required Python libraries
-pip install -r requirements.txt
-```
-
 
 If you use this code or our methodology in your research, please cite the paper:
 
 ```
-@article{ahmadi2024cminns,
-  title={CMINNs: Compartment Model Informed Neural Networks - Unlocking Drug Dynamics},
-  author={Nazanin Ahmadi Daryakenari and Shupeng Wang and George Karniadakis},
-  journal={arXiv preprint arXiv:2409.12998},
-  year={2024}
+@article{daryakenari2025cminns,
+  title={CMINNs: Compartment model informed neural networks—Unlocking drug dynamics},
+  author={Daryakenari, Nazanin Ahmadi and Wang, Shupeng and Karniadakis, George},
+  journal={Computers in Biology and Medicine},
+  volume={184},
+  pages={109392},
+  year={2025},
+  publisher={Elsevier}
 }
+
 ```
