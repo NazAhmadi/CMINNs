@@ -486,7 +486,7 @@ def pd(t, w0=w0_exp1, lambda_0=lambda_0_exp1, lambda_1=lambda_1_exp1):
 
 t_dense = jnp.linspace(0, 19, 1901)
 
-y_dense = pd(jnp.ravel(t_dense)
+y_dense = pd(jnp.ravel(t_dense))
 
 
 w= y_dense[:,0]+y_dense[:,1]
