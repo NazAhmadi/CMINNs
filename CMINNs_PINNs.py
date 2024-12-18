@@ -68,10 +68,10 @@ V1 = 810
 
 #Expriment 2 , day 13 - 17 - 21
 psi = 20
-k2 = 6e-4 #==> True
+k2 = 6e-4
 lambda_0_exp1 =0.273
 lambda_1_exp1 = 0.814
-w0_exp1 = 2.72 #==> not true 0.055
+w0_exp1 = 2.72
 k1 = 0.3
 
 
