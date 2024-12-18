@@ -471,8 +471,6 @@ def pd(t, w0=w0_exp1, lambda_0=lambda_0_exp1, lambda_1=lambda_1_exp1):
         k1 = jnp.interp(t, t_d, k_values)
 
         k2 = k2_func(t)
-        # k1 = 1
-        # k1=0.98
         x1, x2 = y
         w = x1 + x2
 
